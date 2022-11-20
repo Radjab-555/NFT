@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+ body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%) no-repeat;
+    font-weight: 500;
+    color: #fff;
+}
+
+.header {
+    max-width: 1197px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    padding: 20px 15px 110px 15px;
+}
+.header__logo {
+    display: block;
+    margin-left: -120px;
+    color: aliceblue;
+}
+.form {
+    position: relative;
+}
+.form__button {
+    display: block;
+    height: 20px;
+    width: 20px;
+    /* background-image: url(http://cdn.onlinewebfonts.com/svg/img_534826.svg); */
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 10px;
+}
+.form__input {
+    width: 384px;
+    background: rgb(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 40px;
+    color: aliceblue;
+}
+.form__input:focus {
+    outline: none;
+}
+.header__list {
+    display: flex;
+    gap: 40px;
+}
+.header__link {
+    color: aliceblue;
+    text-decoration: none;
+}
+.header__link__gradient {
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: aliceblue;
+}
+
+.conteiner {
+    max-width: 1197px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+.main__text {
+    flex-basis: 490px;
+}
+.main__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.main__desc {
+    font-size: 20px; 
+    line-height: 1.8;
+    color: rgba(255,255,255,.5);
+} 
+.main__btn {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+}
+.main__btn__gradient {
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+}
+.main__imge {
+    flex-basis: calc(100% - 490px - 116px);
+}
+.main__img {
+    width: 100%;
+}
+.main__list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    gap: 110px;
+}
+.main__item {
+    color: rgba(255,255,255,.5);
+    font-size: 20px;
+}
+.main__span {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.company {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-right: 150px;
+}
+
+.title {
+    line-height: 1.8;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4px;
+    max-width: 390px;
+    margin: 0 auto 4px;
+}
+.desc {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.card__item {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 26px;
+    flex-basis: 32%;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.card__item:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+.card__cover {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 380px;
+}
+.card__img {
+    width: 100%;
+    height: 380px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.card__info {
+    display: flex;
+    margin-top: 24px;
+    justify-content:space-between;
+}
+.card__nick {
+    font-size: 20px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+}
+.card__author {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.card__bid {
+    text-align: right;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.card__price {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 5px;
+}
+.card__link {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    padding: 11px 20px;
+    margin-top: 26px;
+}
+.card__link:hover {
+    background:  linear-gradient(45deg, #B75cff 33%, #671ae4 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* .card__link:after {
+    content: "";
+    background-image: url(../images/i\ \(1\).png);
+    display: block;
+} */
+
+
+
+.collapsible {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    outline: none;
+    font-size: 0;
+}
+.active .collapsible:hover {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
+.collapsible::after {
+    content: '\002B';
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+    margin-left: 5px;
+}
+
+.active::after {
+    content: "\2212";
+    color: rgba(255, 255, 255, 1);
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    line-height: 1.5px;
+    transition: max-heigh 0.2s ease-out;
+}
+
+.fac {
+    display: flex;
+    justify-content: space-between;
+}
+.fac__item {
+    flex-basis: 48%;
+}
