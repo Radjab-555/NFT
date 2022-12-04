@@ -27,7 +27,6 @@
     display: block;
     height: 20px;
     width: 20px;
-    /* background-image: url(http://cdn.onlinewebfonts.com/svg/img_534826.svg); */
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
@@ -217,34 +216,34 @@
 }
 /* .card__link:after {
     content: "";
-    background-image: url(../images/i\ \(1\).png);
     display: block;
 } */
 
 
-
+/* Инфо */
 .collapsible {
     background-color: transparent;
     color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    padding: 18px;
+    padding: 22px 10px;
     width: 100%;
     border: none;
     border-bottom: 1px solid #fff;
     text-align: left;
     outline: none;
-    font-size: 0;
+    margin-bottom: 32px;
 }
 .active .collapsible:hover {
     background-color: transparent;
     color: rgba(255, 255, 255, 1);
 }
 
-.collapsible::after {
+.collapsible:after {
     content: '\002B';
     color: rgba(255, 255, 255, 0.5);
     float: right;
     margin-left: 5px;
+    margin-right: 7px;
 }
 
 .active::after {
@@ -256,14 +255,40 @@
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
-    line-height: 1.5px;
     transition: max-heigh 0.2s ease-out;
 }
 
-.fac {
+.faq {
     display: flex;
     justify-content: space-between;
+    margin-top: 46px;
 }
-.fac__item {
-    flex-basis: 48%;
+
+.faq__item {
+    flex-basis: 49.3%;
+}
+
+/* подвал сайта */
+.banner {
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 10px;
+    padding: 51px 15px 64px;
+    text-align: center;
+    margin-top: 118px;
+    margin-bottom: 100px;
+}
+.banner__title {
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 500px;
+    margin: 0 auto 34px;
+    line-height: 1.5;
+}
+.banner__link {
+    background: rgb(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 11px 20px;
+    text-decoration: none;
+    color: #fff;
 }
